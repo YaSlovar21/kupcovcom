@@ -1,0 +1,32 @@
+.hero {
+    max-width: calc(100% - var(--aside-width));
+    margin: 30px auto;
+    border: 1px solid var(--bg-darker-color);
+    border-radius: 4px;
+
+    height: 90vh;
+    padding: calc(var(--aside-width) / 2);
+    box-sizing: border-box;
+    display: flex;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.hero__title {
+    font-weight: 900;
+    font-size: 90px;
+    font-family: 'Jost';
+    font-style:  normal;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+    .hero__title {
+        font-size: 50px;
+    }
+}
