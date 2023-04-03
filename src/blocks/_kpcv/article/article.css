@@ -1,0 +1,26 @@
+.article {
+  max-width: 900px;
+}
+
+.article__poster {
+  max-width: 100%;
+}
+
+.article__heading {
+  margin: 40px 0 20px;
+}
+
+.article__title {
+  font-size: 54px;
+}
+
+.article__subtitle {
+  color: var(--theme-text-color);
+}
+
+.article__paragraph {
+  font-size: var(--p-size);
+  line-height: 1.4;
+  color: var(--theme-text-color);
+}
+

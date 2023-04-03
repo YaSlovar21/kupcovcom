@@ -2,12 +2,37 @@ const path = require('path'); // подключаем path к конфигу в�
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); 
+const {bpages} = require('./bpages');
+
 
 const canonicalURL = 'https://www.kupcov.com'
+
+function generateArticleHtmlPlugins() {
+  return bpages.map(articleData => {
+    return new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL: canonicalURL,
+        articleId: articleData.articleId,
+      },
+      title: articleData.title,
+      heading: articleData.h1,
+      meta: {
+        keywords: articleData.keywords,
+        description: articleData.description,
+      },
+      template: "./src/abstract-blog-page.html",
+      filename: articleData.fileName,
+      chunks: ["blogpage", "aside"],
+    })
+  })
+};
+
+const htmlArticlePlugins = generateArticleHtmlPlugins();
 
 module.exports = {
   entry: { 
     index: './src/kpages/index.js', 
+    blogpage: './src/kpages/blog-page.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -81,17 +106,9 @@ module.exports = {
       template: './src/index.html', // путь к файлу index.html
       chunks: ['index'],
     }),
-    new HtmlWebpackPlugin({
-      templateParameters: {
-        canonicalURL,
-      },
-      template: './src/index-tsep.html', // путь к файлу index.html
-      chunks: ['index'],
-      filename: "index-tsep.html",
-    }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].css'
     })
-  ] 
+  ].concat(htmlArticlePlugins), 
 }

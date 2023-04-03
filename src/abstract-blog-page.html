@@ -16,11 +16,13 @@
       <h1 class="hero__title">KUPCOV</h1>
     </div>
   </header>
-  <main>
-    <article>
-
+  <main class="blogpage">
+    <article class="blogpage__content">
+      <%= require(`html-loader!./articles/${articleId}/${articleId}.html`).default %>
     </article>
-    <div class=""
+    <div class="blogpage__market">
+      
+    </div>
   </main>
 
   <!--FOOTER
