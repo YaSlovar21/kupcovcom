@@ -81,6 +81,14 @@ module.exports = {
       template: './src/index.html', // путь к файлу index.html
       chunks: ['index'],
     }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL,
+      },
+      template: './src/index-tsep.html', // путь к файлу index.html
+      chunks: ['index'],
+      filename: "index-tsep.html",
+    }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].css'
