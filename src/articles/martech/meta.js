@@ -1,9 +1,8 @@
-import img1 from './aside-images/catalog.png';
-import img2 from './aside-images/header-to-image.png';
-
 import poster from './aside-images/poster.png';
 
-export const ptoAdvant  = {
-  asideImages: [img1, img2],
+export const martech  = {
   poster: poster,
+  jsTitle: 'MarTech или цифровые технологии в маркетинге',
+  jsDesc: 'MarTech - это объединение маркетинга и технологий. Расскажем чуть по подробнее.',
+  path: `/blog/chto-takoe-martekh-i-ego-rol-v-marketinge.html`
 };

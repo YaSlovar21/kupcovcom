@@ -1,3 +1,9 @@
+/*
+    --article-title: 36px;
+    --article-subtitle: 28px;
+    --article-subtitle-sm: 24px;
+*/
+
 .article {
   max-width: 900px;
 }
@@ -11,16 +17,21 @@
 }
 
 .article__title {
-  font-size: 54px;
+  font-size: var(--article-title);
+  
 }
 
 .article__subtitle {
+  font-size: var(--article-subtitle);
   color: var(--theme-text-color);
 }
 
+.article__subtitle_sub {
+  font-size: var(--article-subtitle-sm);
+}
+
 .article__paragraph {
-  font-size: var(--p-size);
+  @apply text-lg text-slate-200;
   line-height: 1.4;
-  color: var(--theme-text-color);
 }
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -8,16 +8,16 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
 </head>
-<body class="page">
+<body class="page bg-slate-950 dark:bg-slate-200">
   <%= require('html-loader!./inner-metrika.html').default %>
-  <div class="bg"></div>
+ 
   <header class="hero">
     <div class="hero__content">
       <h1 class="hero__title">KUPCOV</h1>
     </div>
   </header>
   <main class="blogpage">
-    <article class="blogpage__content">
+    <article class="blogpage__content dark:text-slate-900">
       <%= require(`html-loader!./articles/${articleId}/${articleId}.html`).default %>
     </article>
     <div class="blogpage__market">

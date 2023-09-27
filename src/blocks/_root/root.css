@@ -8,9 +8,10 @@
   --theme-gray-color-opacity: #a7a7a7e8;
   --theme-dark-gray-color: #323232;
   --theme-dark-gray-color-opacity:#323232c3;
+
+
   --theme-main-color: #ec2c02;
   --main-equivalent-color: #E7441C;
-
   --form-error-color: #9a290c;
 
   --aside-width: 150px;
@@ -20,21 +21,42 @@
 
   --h2-size: 32px;
   --h3-size: 20px;
-  /*--p-size-comment: 20px;*/
+  
+  --article-title: 52px;
+  --article-subtitle: 36px;
+  --article-subtitle-sm: 32px;
+
   --p-size: 20px;
   --p-size-medium: 16px;
   --p-size-small: 14px;
 
-
-
-  /**/
-  --section-title-size : 32px;
-  --section-title-sm-size: 24px;
+  /* CSS HEX */
+  --lapis-lazuli: #2f6690ff;
+  --cerulean: #3a7ca5ff;
+  --platinum: #d9dcd6ff;
+  --indigo-dye: #16425bff;
+  --sky-blue: #81c3d7ff;
 }
+
+.gradient-top {
+  background: linear-gradient(0deg, #2f6690ff, #3a7ca5ff, #d9dcd6ff, #16425bff, #81c3d7ff);
+}
+.gradient-right{ background: linear-gradient(90deg, #2f6690ff, #3a7ca5ff, #d9dcd6ff, #16425bff, #81c3d7ff);}
+.gradient-bottom{ background: linear-gradient(180deg, #2f6690ff, #3a7ca5ff, #d9dcd6ff, #16425bff, #81c3d7ff);}
+.gradient-left{ background: linear-gradient(270deg, #2f6690ff, #3a7ca5ff, #d9dcd6ff, #16425bff, #81c3d7ff);}
+.gradient-top-right{ background: linear-gradient(45deg, #2f6690ff, #3a7ca5ff, #d9dcd6ff, #16425bff, #81c3d7ff);}
+.gradient-bottom-right{ background: linear-gradient(135deg, #2f6690ff, #3a7ca5ff, #d9dcd6ff, #16425bff, #81c3d7ff);}
+.gradient-top-left{ background: linear-gradient(225deg, #2f6690ff, #3a7ca5ff, #d9dcd6ff, #16425bff, #81c3d7ff);}
+.gradient-bottom-left{ background: linear-gradient(315deg, #2f6690ff, #3a7ca5ff, #d9dcd6ff, #16425bff, #81c3d7ff);}
+.gradient-radial{ background: radial-gradient(#2f6690ff, #3a7ca5ff, #d9dcd6ff, #16425bff, #81c3d7ff);}
+
 
 @media screen and (max-width: 1441px) {
   :root {
     --aside-width: 100px;
+    --article-title: 42px;
+    --article-subtitle: 32px;
+    --article-subtitle-sm: 28px;
     --p-size: 18px;
     --section-title-size: 30px;
     --section-title-sm-size: 24px;
@@ -46,6 +68,9 @@
 @media screen and (max-width: 1281px) {
   :root {
     --aside-width: 80px;
+    --article-title: 36px;
+    --article-subtitle: 28px;
+    --article-subtitle-sm: 24px;
     --p-size: 16px;
     --section-title-size : 28px;
     --section-title-sm-size: 24px;
@@ -57,6 +82,9 @@
 @media screen and (max-width: 1024px) {
   :root {
     --aside-width: 10px;
+    --article-title: 24px;
+    --article-subtitle: 20px;
+    --article-subtitle-sm: 18px;
     --p-size: 16px;
     --section-title-size : 22px;
     --section-title-sm-size: 20px;
@@ -77,21 +105,15 @@
 }
 
 .page {
-    /*min-width: 1100px;*/
-    /* мы ещё не умеем делать мобильную версию сайта, */
-    /* поэтому выше установлена минимальная ширина страницы
-    max-width: 100%;*/
-    /* выше установили ограничение по максимальной ширине
-
-    margin: 0 auto;*/
-    /* выше для экранов больше 1600px отцентрировали весь контент */
     font-family: 'Manrope', Arial, sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
-  }
+
+    @apply bg-slate-900;
+}
 
 html, body, main {
     /*position: relative;

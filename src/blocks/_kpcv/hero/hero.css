@@ -25,6 +25,10 @@
     font-weight: 900;
 }
 
+.menu__button {
+    @apply flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-400;
+}
+
 @media screen and (max-width: 768px) {
     .hero__title {
         font-size: 50px;
