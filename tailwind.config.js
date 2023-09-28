@@ -3,8 +3,8 @@
 const path = require('path');
 
 module.exports = {
-  content: ["./src/*.html"],
-  darkMode: 'class',
+  content: ["./src/**/*.html", "./src/*.html"],
+  darkMode: ["class", "[data-mode='light']"],
   theme: {
     extend: {},
     screens: {

@@ -35,3 +35,7 @@
   line-height: 1.4;
 }
 
+.article__paragraph_light {
+  @apply text-lg text-slate-950;
+}
+

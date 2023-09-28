@@ -106,6 +106,15 @@ module.exports = {
       template: './src/index.html', // путь к файлу index.html
       chunks: ['index'],
     }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL,
+      },
+      title: "О Купцове",
+      template: './src/about.html', // путь к файлу index.html
+      filename: 'about/index.html',
+      chunks: ['index'],
+    }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].css'
