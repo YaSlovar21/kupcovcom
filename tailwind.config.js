@@ -13,7 +13,7 @@ module.exports = {
             '--tw-prose-body' : '#f2f2f2',
             '--tw-prose-headings' : theme('colors.pink[800]'),
             '--tw-prose-lead' : '#525252',
-            '--tw-prose-links' : '#171717',
+            '--tw-prose-links' : theme('colors.purple[600]'),
             '--tw-prose-bold' : '#171717',
             '--tw-prose-counters' : '#737373',
             '--tw-prose-bullets' : '#d4d4d4',
