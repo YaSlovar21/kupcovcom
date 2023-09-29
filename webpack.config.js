@@ -22,7 +22,7 @@ function generateArticleHtmlPlugins() {
       },
       template: "./src/abstract-blog-page.html",
       filename: articleData.fileName,
-      chunks: ["blogpage", "aside"],
+      chunks: ["blogpage", "aside", 'all'],
     })
   })
 };
@@ -33,6 +33,7 @@ module.exports = {
   entry: { 
     index: './src/kpages/index.js', 
     blogpage: './src/kpages/blog-page.js',
+    all: './src/kpages/all.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -104,7 +105,7 @@ module.exports = {
       },
       title: "Kupcov | Маркетинговое сопровождение с Martech инструментарием",
       template: './src/index.html', // путь к файлу index.html
-      chunks: ['index'],
+      chunks: ['index', 'all'],
     }),
     new HtmlWebpackPlugin({
       templateParameters: {
@@ -113,7 +114,7 @@ module.exports = {
       title: "О Купцове",
       template: './src/about.html', // путь к файлу index.html
       filename: 'about/index.html',
-      chunks: ['index'],
+      chunks: ['index', 'all'],
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
