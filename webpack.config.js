@@ -3,9 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); 
 const {bpages} = require('./bpages');
+const { techs } = require('./techs');
 
 
 const canonicalURL = 'https://www.kupcov.com'
+
 
 function generateArticleHtmlPlugins() {
   return bpages.map(articleData => {
@@ -102,6 +104,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       templateParameters: {
         canonicalURL,
+        techs,
       },
       title: "Kupcov | Маркетинговое сопровождение с Martech инструментарием",
       template: './src/index.html', // путь к файлу index.html

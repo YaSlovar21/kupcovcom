@@ -11,12 +11,12 @@ module.exports = {
         kupcovcom: {
           css: {
             '--tw-prose-body' : '#f2f2f2',
-            '--tw-prose-headings' : theme('colors.pink[800]'),
+            '--tw-prose-headings' : '#7861C1',
             '--tw-prose-lead' : '#525252',
-            '--tw-prose-links' : theme('colors.purple[600]'),
+            '--tw-prose-links' : '#5F4D96',
             '--tw-prose-bold' : '#171717',
             '--tw-prose-counters' : '#737373',
-            '--tw-prose-bullets' : '#d4d4d4',
+            '--tw-prose-bullets' : '#7861C1',
             '--tw-prose-hr' : '#e5e5e5',
             '--tw-prose-quotes' : '#171717',
             '--tw-prose-quote-borders' : '#e5e5e5',
@@ -31,7 +31,6 @@ module.exports = {
             '--tw-prose-invert-body' : '#d4d4d4',
             '--tw-prose-invert-headings' : '#fff',
             '--tw-prose-invert-lead' : '#a3a3a3',
-            '--tw-prose-invert-links' : '#fff',
             '--tw-prose-invert-bold' : '#fff',
             '--tw-prose-invert-counters' : '#a3a3a3',
             '--tw-prose-invert-bullets' : '#525252',
@@ -49,24 +48,24 @@ module.exports = {
           },
         },
       }),
-    },
+    
     screens: {
-      '2xl': {'max': '1535px'},
-      // => @media (max-width: 1535px) { ... }
-
-      'xl': {'max': '1279px'},
-      // => @media (max-width: 1279px) { ... }
-
-      'lg': {'max': '1023px'},
-      // => @media (max-width: 1023px) { ... }
-
-      'md': {'max': '767px'},
-      // => @media (max-width: 767px) { ... }
-
-      'sm': {'max': '639px'},
-      // => @media (max-width: 639px) { ... }
+      'pc': {'min': '1536px'},
+      'mvpc': {'min': '1366px'},
+      'olpc': {'min': '1240px'},
+      'laptop': {'min': '768px'},
+    },
+    colors: {
+      primary: {
+        lighter: '#B4D7FF',
+        light: '#46557E',
+        DEFAULT: '#324164',
+        dark: '#191E28',
+        darker: '#0F141E',
+      },
     }
-  },
+  }
+},
   plugins: [
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),

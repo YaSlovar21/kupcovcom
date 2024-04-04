@@ -9,142 +9,144 @@
   <link href="<%= canonicalURL %>"  rel="canonical" />
   <meta name="verify-admitad" content="e50e22898b" />
 </head>
-<body class="page ">
+<body class="page bg-primary-darker">
   <%= require('html-loader!./inner-metrika.html').default %>
-  <div class="isolate  gap-x-6 overflow-hidden sticky bg-gray-900 sm:px-3.5 sm:before:flex-1">
-    <div class="max-w-7xl mx-auto w-full px-6 py-2.5 flex items-center">
-    <div class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
-      <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
+  <figure class="absolute top-0 left-0 z-0">
+    <svg class="w-[233px] h-[164px] olpc:w-[700px] olpc:h-[492px]" viewBox="0 0 700 492" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="289.5" cy="93.5" rx="410.5" ry="398.5" fill="url(#paint0_radial_2_479)"/>
+      <defs>
+      <radialGradient id="paint0_radial_2_479" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(289.5 93.5) rotate(90) scale(398.5 410.5)">
+      <stop stop-color="#4661D9" stop-opacity="0.54"/>
+      <stop offset="1" stop-color="#1F2398" stop-opacity="0"/>
+      </radialGradient>
+      </defs>
+      </svg>        
+  </figure>
+  <header>
+    <div class="container mx-auto relative pt-20 olpc:max-w-7xl flex justify-between">
+      <a class="" href="/"><img src="<%= require('./images/kupcov-logo.svg')%>" alt="Лого"></a>
+      <nav>
+        <ul class="flex text-[#8CA0C3] uppercase">
+          <li class="mr-8">Блог</li>
+          <li class="mr-8">Влог</li>
+          <li>Эпилог</li>
+        </ul>
+      </nav>
+      <button class="font-semibold text-xl text-[#8CA0C3]">Запросить референсы</button>
     </div>
-    <div class="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
-      <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
-    </div>
-    <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
-      <p class="text-sm leading-6 text-gray-400">
-        <strong class="font-semibold">GeneriCon 2023</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Join us in Denver from June 7 – 9 to see what’s coming next.
-      </p>
-      <a href="#" class="flex-none rounded-full bg-gray-400 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Register now <span aria-hidden="true">&rarr;</span></a>
-    </div>
-    <div class="flex flex-1 justify-end">
-      <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
-        <span class="sr-only">Dismiss</span>
-        <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-          <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-        </svg>
-      </button>
-    </div>
-     </div>
-  </div>
-  <%= require('html-loader!./insets/header.html').default %>
-  
-  <header class="mt-4 relative overflow-hidden max-w-7xl mx-auto">
-    <div class="container relative flex flex-col justify-center rounded  shadow-sm shadow-slate-950 bg-slate-800 aspect-[18/6] mx-auto px-10">
-      <h1 class="text text-7xl m-0 text uppercase font-black text-slate-200 z-10">Купцов</h1>
-      <p class="text text-slate-400 mt-4 z-10">Подписка на маркетинг с Martech инструментарием</p>
-    </div>
-    <svg class="absolute w-full h-full left-0 top-0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 2400 800"><defs><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="oooscillate-grad"><stop stop-color="rgb(87, 127, 222)" stop-opacity="1" offset="0%"></stop><stop stop-color="#e1e1e1" stop-opacity="1" offset="100%"></stop></linearGradient></defs><g stroke-width="2" stroke="url(#oooscillate-grad)" fill="none" stroke-linecap="round"><path d="M 0 572 Q 600 120 1200 400 Q 1800 680 2400 572" opacity="0.05"></path><path d="M 0 550 Q 600 120 1200 400 Q 1800 680 2400 550" opacity="0.09"></path><path d="M 0 528 Q 600 120 1200 400 Q 1800 680 2400 528" opacity="0.13"></path><path d="M 0 506 Q 600 120 1200 400 Q 1800 680 2400 506" opacity="0.16"></path><path d="M 0 484 Q 600 120 1200 400 Q 1800 680 2400 484" opacity="0.20"></path><path d="M 0 462 Q 600 120 1200 400 Q 1800 680 2400 462" opacity="0.24"></path><path d="M 0 440 Q 600 120 1200 400 Q 1800 680 2400 440" opacity="0.28"></path><path d="M 0 418 Q 600 120 1200 400 Q 1800 680 2400 418" opacity="0.32"></path><path d="M 0 396 Q 600 120 1200 400 Q 1800 680 2400 396" opacity="0.35"></path><path d="M 0 374 Q 600 120 1200 400 Q 1800 680 2400 374" opacity="0.39"></path><path d="M 0 352 Q 600 120 1200 400 Q 1800 680 2400 352" opacity="0.43"></path><path d="M 0 330 Q 600 120 1200 400 Q 1800 680 2400 330" opacity="0.47"></path><path d="M 0 308 Q 600 120 1200 400 Q 1800 680 2400 308" opacity="0.51"></path><path d="M 0 286 Q 600 120 1200 400 Q 1800 680 2400 286" opacity="0.54"></path><path d="M 0 264 Q 600 120 1200 400 Q 1800 680 2400 264" opacity="0.58"></path><path d="M 0 242 Q 600 120 1200 400 Q 1800 680 2400 242" opacity="0.62"></path><path d="M 0 220 Q 600 120 1200 400 Q 1800 680 2400 220" opacity="0.66"></path><path d="M 0 198 Q 600 120 1200 400 Q 1800 680 2400 198" opacity="0.70"></path><path d="M 0 176 Q 600 120 1200 400 Q 1800 680 2400 176" opacity="0.73"></path><path d="M 0 154 Q 600 120 1200 400 Q 1800 680 2400 154" opacity="0.77"></path><path d="M 0 132 Q 600 120 1200 400 Q 1800 680 2400 132" opacity="0.81"></path><path d="M 0 110 Q 600 120 1200 400 Q 1800 680 2400 110" opacity="0.85"></path><path d="M 0 88 Q 600 120 1200 400 Q 1800 680 2400 88" opacity="0.89"></path><path d="M 0 66 Q 600 120 1200 400 Q 1800 680 2400 66" opacity="0.92"></path><path d="M 0 44 Q 600 120 1200 400 Q 1800 680 2400 44" opacity="0.96"></path></g></svg>
   </header>
   <main>
-    <div class="py-24 sm:py-32">
-      <div class="mx-auto max-w-7xl px-10 ">
-        <div class="mx-auto max-w-7xl lg:mx-0">
-          <h2 class="text-3xl font-bold tracking-tight text-slate-200 sm:text-4xl">Почитать</h2>
-          <p class="mt-2 text-lg leading-8 text-gray-600">Learn how to grow your business with our expert advice.</p>
-        </div>
-        <div class="mx-auto mt-10 grid max-w-7xl grid-cols-3 gap-x-8 gap-y-16 border-t border-gray-500 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          <article class="flex max-w-xl flex-col items-start justify-between border p-4 rounded bg-opacity-5 border-slate-800 bg-slate-300">
-            <div class="flex items-center gap-x-4 text-xs">
-              <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
-              <a href="/blog/chto-takoe-martekh-i-ego-rol-v-marketinge.html" class="relative z-10 rounded-full bg-orange-500 px-3 py-1.5 font-medium text-gray-200 uppercase hover:bg-gray-100">Маркетинг</a>
-            </div>
-            <div class="group relative">
-              <h3 class="mt-3 text-xl font-semibold leading-6 text-slate-100 group-hover:text-gray-600">
-                <a href="/blog/chto-takoe-martekh-i-ego-rol-v-marketinge.html">
-                  <span class="absolute inset-0"></span>
-                  Что такое Мартех?
-                </a>
-              </h3>
-              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
-            </div>
-            <div class="relative mt-8 flex items-center gap-x-4">
-              <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
-              <div class="text-sm leading-6">
-                <p class="font-semibold text-gray-900">
-                  <a href="/blog/chto-takoe-martekh-i-ego-rol-v-marketinge.html">
-                    <span class="absolute inset-0"></span>
-                    Michael Foster
-                  </a>
-                </p>
-                <p class="text-gray-600">Co-Founder / CTO</p>
-              </div>
-            </div>
-          </article>
-          <article class="flex max-w-xl flex-col items-start justify-between border p-4 rounded bg-opacity-5 border-slate-800 bg-slate-300">
-            <div class="flex items-center gap-x-4 text-xs">
-              <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
-              <a href="/blog/chto-takoe-martekh-i-ego-rol-v-marketinge.html" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
-            </div>
-            <div class="group relative">
-              <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                <a href="/blog/chto-takoe-martekh-i-ego-rol-v-marketinge.html">
-                  <span class="absolute inset-0"></span>
-                  Что такое Мартех?
-                </a>
-              </h3>
-              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
-            </div>
-            <div class="relative mt-8 flex items-center gap-x-4">
-              <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
-              <div class="text-sm leading-6">
-                <p class="font-semibold text-gray-900">
-                  <a href="/blog/chto-takoe-martekh-i-ego-rol-v-marketinge.html">
-                    <span class="absolute inset-0"></span>
-                    Michael Foster
-                  </a>
-                </p>
-                <p class="text-gray-600">Co-Founder / CTO</p>
-              </div>
-            </div>
-          </article>
-          <!-- More posts... -->
-        </div>
-      </div>
-    </div>
     
-    <a href="/blog/chto-takoe-martekh-i-ego-rol-v-marketinge.html">Что такое Мартех?</a>
-    <a href="/blog/top-5-trendy-martekh.html">Тенденции Martech</a>
-  </main>
-<footer class="mx-auto max-w-7xl px-6 mt-24 w-full sm:mt-32 lg:mt-40">
-  <div class="mx-auto max-w-none">
-    <div style="opacity: 1; transform: none;">
-      <div class="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
-        <nav>
-          <ul role="list" class="grid grid-cols-2 gap-8 sm:grid-cols-1">
-            <li>
-              <h3 class="font-display text-sm font-semibold tracking-wider text-slate-200">Work</h3>
-              <ul role="list" class="mt-4 text-sm text-neutral-700">
-                <li class="mt-4"><a class="transition hover:text-slate-200" href="/work/family-fund">FamilyFund</a>
-                </li>
-                <li class="mt-4"><a class="transition hover:text-slate-200" href="/work/unseal">Unseal</a></li>
-                <li class="mt-4"><a class="transition hover:text-slate-200" href="/work/phobia">Phobia</a></li>
-                <li class="mt-4"><a class="transition hover:text-slate-200" href="/work">See all <span
-                      aria-hidden="true">→</span></a></li>
-              </ul>
-            </li>
-            <li>
-              <h3 class="font-display text-sm font-semibold tracking-wider text-slate-200">Company</h3>
-              <ul role="list" class="mt-4 text-sm text-neutral-700">
-                <li class="mt-4"><a class="transition hover:text-slate-200" href="/about">About</a></li>
-                <li class="mt-4"><a class="transition hover:text-slate-200" href="/process">Process</a></li>
-                <li class="mt-4"><a class="transition hover:text-slate-200" href="/blog">Blog</a></li>
-                <li class="mt-4"><a class="transition hover:text-slate-200" href="/contact">Contact us</a></li>
-              </ul>
+    
+    <div class="container mx-auto relative pt-20 olpc:max-w-7xl">
+      <h1 class="text-4xl olpc:text-7xl max-w-xl text-white font-bold">Подписка на маркетинг</h1>
+      <p class="text-primary-lighter text-2xl mt-6 max-w-2xl">Lorem ipsum dolor sit amet consectetur. Gravida cursus enim tincidunt dictum facilisi morbi id porta.</p>
+      <a class="bg-[#f4f4f4] text-2xl py-5 px-10 rounded-3xl inline-block mt-10">Подробнее</a>
+    </div>
+    <div class="container mx-auto olpc:max-w-7xl mt-20">
+      <ul class="grid grid-cols-1 olpc:grid-cols-[578px_minmax(900px,_1fr)_100px] olpc:grid-rows-[264px_264px]">
+        <li class="bg-primary-light rounded-3xl row-span-2 flex flex-col items-start p-6 relative overflow-hidden">
+          <span class="inline-block rounded-full text-white border border-white text-sm font-semibold px-3 py-1">Наши кейсы</span>
+          <h2 class="text-[#8CA0C3] text-4xl font-bold mt-5"><span class="text-white">Реальные кейсы</span> промышленных предприятий лидеров отрасли</h2>
+          <p class="text-[#A0AFC8] mt-auto max-w-[150px]">Кейсы SEO, рекламы, продаж и сайтов</p>
+          <img class="absolute -bottom-8 -right-6 w-[411px] h-[411px]" src="<%= require('./images/real-cases-bro.svg')%>" alt="">
+        </li>
+      </ul>
+    </div>
+    <section class="container mx-auto mt-24 olpc:max-w-7xl">
+      <h2 class="text-center font-bold text-white text-4xl olpc:text-5xl">Технологии</h2>
+      <ul class="grid gap-3 mt-12 olpc:grid-cols-3 olpc:grid-rows-2">
+        <% techs.map((tech) => {  %>
+          <li class="bg-primary-dark rounded-3xl p-8">
+            <h3 class="font-semibold text-white text-2xl"><%= tech.title %></h3>
+            <p class="text-xl text-[#6D82AA] max-w-[300px]"><%= tech.desc %></p>
+          </li>
+        <% }) %>
+      </ul>
+    </section>
+    <section class="container mx-auto mt-24 olpc:max-w-7xl">
+      <h2 class="text-center font-bold text-white text-4xl olpc:text-5xl">Цены</h2>
+      <ul class="grid gap-3 mt-12 olpc:grid-cols-3 olpc:grid-rows-2 olpc:grid-rows-[1fr_0.6fr]">
+        <li class="bg-primary-dark rounded-3xl p-8 flex flex-col">
+          <h3 class="font-semibold text-[#6D82AA] text-base">Базовый план</h3>
+          <p class="text-xl uppercase font-medium text-white my-2">₽10 тыс.<span class="text-base text-gray-400 font-normal ml-1">/мес</span></p>
+          <ul class="text-[#6D82AA] text-base list-inside divide-transparent divide-y-8 my-8">
+            <li class="flex before:content-[url(../images/checkmark.svg)] before:w-6 before:h-6 before:mt-1 before:mr-2">реклама в тех каналах, в которых есть Ваша ЦА</li>
+            <li class="flex before:content-[url(../images/checkmark.svg)] before:w-6 before:h-6 before:mt-1 before:mr-2">SEO оптимизация в рамках текущего сайта</li>
+            <li><span class="block text-gray-300 text-sm">или</span><span class="flex before:content-[url(../images/checkmark.svg)] before:w-6 before:h-6 before:shrink-0 before:mt-1 before:mr-2">рекомендация бюджетного решения хорошо индексируемой  и быстрой CMS  и дальнейшая работа в данной системе</span></li>
+          </ul>
+          <button class="block w-full text-center p-6 bg-primary-lighter rounded-xl mt-auto">Уточнить детали</button>
+        </li>
+        <li class="bg-primary-dark rounded-3xl p-8 flex flex-col">
+          <h3 class="font-semibold text-[#6D82AA] text-base">Профессиональный план</h3>
+          <p class="text-xl uppercase font-medium text-white my-2">₽30 тыс.<span class="text-base text-gray-400 font-normal ml-1">/мес</span></p>
+          <ul class="text-[#6D82AA] text-base list-inside divide-transparent divide-y-8 my-8">
+            <li class="flex before:content-[url(../images/checkmark.svg)] before:w-6 before:h-6 before:mt-1 before:mr-2 before:shrink-0">реклама в тех каналах, в которых есть Ваша ЦА</li>
+            <li class="flex before:content-[url(../images/checkmark.svg)] before:w-6 before:h-6 before:mt-1 before:mr-2 before:shrink-0">Разработанный нами сайт</li>
+            <li><span class="block text-gray-300 text-sm">Фокус на органическое продвижение в поисковых системах</span><span class="flex before:content-[url(../images/checkmark.svg)] before:w-6 before:h-6 before:shrink-0 before:mt-1 before:mr-2">Сервер под нашим контролем</span></li>
+            <li class="flex before:content-[url(../images/checkmark.svg)] before:w-6 before:h-6 before:mt-1 before:mr-2 before:shrink-0">оптимизированный код и изображения</li>
+            <li class="flex before:content-[url(../images/checkmark.svg)] before:w-6 before:h-6 before:mt-1 before:mr-2 before:shrink-0">Быстрый DNS хостинг</li>
+            <li class="flex before:content-[url(../images/checkmark.svg)] before:w-6 before:h-6 before:mt-1 before:mr-2 before:shrink-0">SEО-оптимизация контента и помощь в его создании</li>
+          </ul>
+          <button class="block w-full text-center p-6 bg-primary-lighter rounded-xl mt-auto">Уточнить детали</button>
+        </li>
+        <li class="bg-primary-dark rounded-3xl p-8 flex flex-col">
+          <h3 class="font-semibold text-[#6D82AA] text-base">Индивидуальный план</h3>
+          <p class="text-xl uppercase font-medium text-white my-2">₽50 тыс.<span class="text-base text-gray-400 font-normal ml-1">/мес</span></p>
+          <ul class="text-[#6D82AA] text-base list-inside divide-transparent divide-y-8 my-8">
+            <li class="flex before:content-[url(../images/checkmark.svg)] before:w-6 before:h-6 before:mt-1 before:mr-2 before:shrink-0">Всё, что входит в «Профессиональный план»</li>
+            <li class="">
+              <span class="flex before:content-[url(../images/plus-circle.svg)] before:w-6 before:h-6 before:mt-1 before:mr-2 before:shrink-0">Разработка кастомного сервиса под потребности Вашей целевой аудитории: калькулятор, конструктор, личный кабинет</span>
+              <span class="block mt-8">Можем разместить такой проект на поддомене, не затрагивая основной сайт</span>
             </li>
           </ul>
-        </nav>
+          <button class="block w-full text-center p-6 bg-primary-lighter rounded-xl mt-auto">Уточнить детали</button>
+        </li>
+        <li class="bg-primary-dark rounded-3xl p-8 flex flex-col col-span-2">
+          <h3 class="font-semibold text-[#6D82AA] text-base">Бесплатно</h3>
+          <p class="text-xl uppercase font-medium text-white my-2">₽0</p>
+          <p class="text-[#6D82AA] text-lg my-8">Бесплатно посмотрим Ваши показатели в рекламе, оптимизацию сайта. Дадим рекомендациии, которые можно внедрить самостоятельно и получить результат.</p>
+        </li>
+      </ul>
+    </section>
+    <section class="container mx-auto mt-24 olpc:max-w-7xl">
+      <h2 class="text-center font-bold text-white text-4xl olpc:text-5xl">Детально по направлению</h2>
+      <div class="rounded-[36px]  mt-12  bg-[#B4D7FF] p-14 flex">
+        <div class="basis-1/3 flex flex-col items-start">
+          <span class="inline-block rounded-full text-white border border-[#5A7DAA] text-sm font-semibold px-3 py-1 text-lg text-[#5A7DAA]">Основа</span>
+          <h3 class="text-6xl text-primary-dark font-bold max-w-xs mt-5">Мартех <br>в деталях</h3>
+          <p class="text-[#5A7DAA] text-2xl max-w-xs mt-4 mb-16">Lorem ipsum dolor sit amet consectetur. </p>
+          <img class="w-[334px] h-[334px] mt-auto" src="<%= require('./images/developer-activity-amico.svg')%>" alt="">
+        </div>
+        <div class="basis-2/3 border-2">
+
+        </div>
       </div>
-    </div>
+      <div class="rounded-[36px]  bg-primary p-14 flex relative -top-[56px]">
+        <div class="basis-1/3 flex flex-col items-start">
+          <span class="inline-block rounded-full text-white border border-[#B4D7FF] text-sm font-semibold px-3 py-1 text-lg text-[#B4D7FF]">Основа</span>
+          <h3 class="text-6xl text-white font-bold max-w-xs mt-5">Дело <br>в деталях</h3>
+          <p class="text-[#B4D7FF] text-2xl max-w-xs mt-4 mb-16">Lorem ipsum dolor sit amet consectetur. </p>
+          <img class="w-[334px] h-[334px] mt-auto" src="<%= require('./images/developer-activity-amico.svg')%>" alt="">
+        </div>
+        <div class="basis-2/3 border-2">
+          <a href="/blog/chto-takoe-martekh-i-ego-rol-v-marketinge.html">Что такое Мартех?</a>
+          <a href="/blog/top-5-trendy-martekh.html">Тенденции Martech</a>
+        </div>
+      </div>
+    </section>   
+  </main>
+<footer class="container mx-auto mt-24 olpc:max-w-7xl p-14 flex justify-between">
+  <div>
+    <a class="" href="/"><img src="<%= require('./images/kupcov-logo.svg')%>" alt="Лого"></a>
+    <ul class="my-5">
+      <li><a class="text-lg text-[#92AFC8] font-semibold" href="#">Telegram</a></li>
+    </ul>
+    <p class="text-base text-primary-light">2024 ООО «Купцов Технологии» </p>
   </div>
+  <p class="text-base text-primary-light max-w-sm">
+    Lorem ipsum dolor sit amet consectetur. In malesuada et consectetur sapien egestas eleifend cursus vulputate elementum. Aliquet parturient et lorem quam sit non.
+  </p>
 </footer> <!--FOOTER
   html-loader!./insets/asides/inner-footer.html').default-->
 </body>
