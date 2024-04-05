@@ -39,8 +39,8 @@
     
     
     <div class="container mx-auto relative pt-20 olpc:max-w-7xl">
-      <h1 class="text-4xl olpc:text-7xl max-w-xl text-white font-bold">Подписка на маркетинг</h1>
-      <p class="text-primary-lighter text-2xl mt-6 max-w-2xl">Lorem ipsum dolor sit amet consectetur. Gravida cursus enim tincidunt dictum facilisi morbi id porta.</p>
+      <h1 class="text-5xl olpc:text-7xl max-w-xl text-white font-bold">Подписка на маркетинг</h1>
+      <p class="text-primary-lighter text-xl laptop:text-2xl mt-6 max-w-2xl">Индивидуально закроем направление интернет-маркетинга для Вашей компании.</p>
       <a class="bg-[#f4f4f4] text-2xl py-5 px-10 rounded-3xl inline-block mt-10">Подробнее</a>
     </div>
     <div class="container mx-auto olpc:max-w-7xl mt-20">
@@ -53,23 +53,13 @@
         </li>
       </ul>
     </div>
+    
     <section class="container mx-auto mt-24 olpc:max-w-7xl">
-      <h2 class="text-center font-bold text-white text-4xl olpc:text-5xl">Технологии</h2>
-      <ul class="grid gap-3 mt-12 olpc:grid-cols-3 olpc:grid-rows-2">
-        <% techs.map((tech) => {  %>
-          <li class="bg-primary-dark rounded-3xl p-8">
-            <h3 class="font-semibold text-white text-2xl"><%= tech.title %></h3>
-            <p class="text-xl text-[#6D82AA] max-w-[300px]"><%= tech.desc %></p>
-          </li>
-        <% }) %>
-      </ul>
-    </section>
-    <section class="container mx-auto mt-24 olpc:max-w-7xl">
-      <h2 class="text-center font-bold text-white text-4xl olpc:text-5xl">Цены</h2>
-      <ul class="grid gap-3 mt-12 olpc:grid-cols-3 olpc:grid-rows-2 olpc:grid-rows-[1fr_0.6fr]">
-        <li class="bg-primary-dark rounded-3xl p-8 flex flex-col">
+      <h2 class="text-center font-bold text-white text-3xl laptop:text-4xl olpc:text-5xl">Цены</h2>
+      <ul class="grid gap-3 mt-12 laptop:grid-cols-2 olpc:grid-cols-3  olpc:grid-rows-[1fr_0.6fr]">
+        <li class="bg-primary-dark rounded-3xl p-5 olpc:p-8 flex flex-col">
           <h3 class="font-semibold text-[#6D82AA] text-base">Базовый план</h3>
-          <p class="text-xl uppercase font-medium text-white my-2">₽10 тыс.<span class="text-base text-gray-400 font-normal ml-1">/мес</span></p>
+          <p class="text-2xl uppercase font-medium text-white my-2">₽10 тыс.<span class="text-base text-gray-400 font-normal ml-1">/мес</span></p>
           <ul class="text-[#6D82AA] text-base list-inside divide-transparent divide-y-8 my-8">
             <li class="flex before:content-[url(../images/checkmark.svg)] before:w-6 before:h-6 before:mt-1 before:mr-2">реклама в тех каналах, в которых есть Ваша ЦА</li>
             <li class="flex before:content-[url(../images/checkmark.svg)] before:w-6 before:h-6 before:mt-1 before:mr-2">SEO оптимизация в рамках текущего сайта</li>
@@ -77,22 +67,23 @@
           </ul>
           <button class="block w-full text-center p-6 bg-primary-lighter rounded-xl mt-auto">Уточнить детали</button>
         </li>
-        <li class="bg-primary-dark rounded-3xl p-8 flex flex-col">
+        <li class="bg-primary-dark rounded-3xl p-5 olpc:p-8 flex flex-col">
           <h3 class="font-semibold text-[#6D82AA] text-base">Профессиональный план</h3>
-          <p class="text-xl uppercase font-medium text-white my-2">₽30 тыс.<span class="text-base text-gray-400 font-normal ml-1">/мес</span></p>
+          <p class="text-2xl uppercase font-medium text-white my-2">₽30 тыс.<span class="text-base text-gray-400 font-normal ml-1">/мес</span></p>
           <ul class="text-[#6D82AA] text-base list-inside divide-transparent divide-y-8 my-8">
             <li class="flex before:content-[url(../images/checkmark.svg)] before:w-6 before:h-6 before:mt-1 before:mr-2 before:shrink-0">реклама в тех каналах, в которых есть Ваша ЦА</li>
             <li class="flex before:content-[url(../images/checkmark.svg)] before:w-6 before:h-6 before:mt-1 before:mr-2 before:shrink-0">Разработанный нами сайт</li>
-            <li><span class="block text-gray-300 text-sm">Фокус на органическое продвижение в поисковых системах</span><span class="flex before:content-[url(../images/checkmark.svg)] before:w-6 before:h-6 before:shrink-0 before:mt-1 before:mr-2">Сервер под нашим контролем</span></li>
+            <li class="flex mt-2 text-gray-400 before:content-[url(../images/focus.svg)] before:w-5 before:h-5 before:mt-1 before:mr-3 before:shrink-0">Фокус на органическое продвижение в поисковых системах</span>
+            <li class="flex before:content-[url(../images/checkmark.svg)] before:w-6 before:h-6 before:mt-1 before:mr-2 before:shrink-0 ">Сервер под нашим контролем</span></li>
             <li class="flex before:content-[url(../images/checkmark.svg)] before:w-6 before:h-6 before:mt-1 before:mr-2 before:shrink-0">оптимизированный код и изображения</li>
             <li class="flex before:content-[url(../images/checkmark.svg)] before:w-6 before:h-6 before:mt-1 before:mr-2 before:shrink-0">Быстрый DNS хостинг</li>
             <li class="flex before:content-[url(../images/checkmark.svg)] before:w-6 before:h-6 before:mt-1 before:mr-2 before:shrink-0">SEО-оптимизация контента и помощь в его создании</li>
           </ul>
           <button class="block w-full text-center p-6 bg-primary-lighter rounded-xl mt-auto">Уточнить детали</button>
         </li>
-        <li class="bg-primary-dark rounded-3xl p-8 flex flex-col">
+        <li class="bg-primary-dark rounded-3xl p-5 olpc:p-8 flex flex-col">
           <h3 class="font-semibold text-[#6D82AA] text-base">Индивидуальный план</h3>
-          <p class="text-xl uppercase font-medium text-white my-2">₽50 тыс.<span class="text-base text-gray-400 font-normal ml-1">/мес</span></p>
+          <p class="text-2xl uppercase font-medium text-white my-2">₽50 тыс.<span class="text-base text-gray-400 font-normal ml-1">/мес</span></p>
           <ul class="text-[#6D82AA] text-base list-inside divide-transparent divide-y-8 my-8">
             <li class="flex before:content-[url(../images/checkmark.svg)] before:w-6 before:h-6 before:mt-1 before:mr-2 before:shrink-0">Всё, что входит в «Профессиональный план»</li>
             <li class="">
@@ -102,39 +93,76 @@
           </ul>
           <button class="block w-full text-center p-6 bg-primary-lighter rounded-xl mt-auto">Уточнить детали</button>
         </li>
-        <li class="bg-primary-dark rounded-3xl p-8 flex flex-col col-span-2">
+        <li class="bg-primary-dark rounded-3xl p-5 olpc:p-8 flex flex-col olpc:col-span-2">
           <h3 class="font-semibold text-[#6D82AA] text-base">Бесплатно</h3>
-          <p class="text-xl uppercase font-medium text-white my-2">₽0</p>
+          <p class="text-2xl uppercase font-medium text-white my-2">₽0</p>
           <p class="text-[#6D82AA] text-lg my-8">Бесплатно посмотрим Ваши показатели в рекламе, оптимизацию сайта. Дадим рекомендациии, которые можно внедрить самостоятельно и получить результат.</p>
         </li>
       </ul>
     </section>
     <section class="container mx-auto mt-24 olpc:max-w-7xl">
-      <h2 class="text-center font-bold text-white text-4xl olpc:text-5xl">Детально по направлению</h2>
-      <div class="rounded-[36px]  mt-12  bg-[#B4D7FF] p-14 flex">
+      <h2 class="text-center font-bold text-white text-3xl laptop:text-4xl olpc:text-5xl">Детально по направлению</h2>
+      <div class="rounded-[36px] mt-12  bg-[#B4D7FF]  p-6 olpc:p-14  flex flex-col olpc:flex-row ">
         <div class="basis-1/3 flex flex-col items-start">
-          <span class="inline-block rounded-full text-white border border-[#5A7DAA] text-sm font-semibold px-3 py-1 text-lg text-[#5A7DAA]">Основа</span>
-          <h3 class="text-6xl text-primary-dark font-bold max-w-xs mt-5">Мартех <br>в деталях</h3>
-          <p class="text-[#5A7DAA] text-2xl max-w-xs mt-4 mb-16">Lorem ipsum dolor sit amet consectetur. </p>
+          <span class="inline-block rounded-full relative border border-[#5A7DAA] text-sm font-semibold px-3 py-1 text-lg text-[#5A7DAA] before:w-60 before:h-[1px] before:bg-[#5A7DAA] before:absolute before:-right-60 before:top-[1em] after:w-2 after:h-2 after:rounded-full after:absolute after:top-[0.8em] after:-right-60 after:bg-primary">Кто мы такие?</span>
+          <h3 class="text-3xl laptop:text-4xl olpc:text-6xl text-primary-dark font-bold max-w-xs mt-20 mb-4">Наш<br> профиль</h3>
+          <p class="text-primary-light text-base olpc:text-2xl max-w-xs mt-4 olpc:mb-16">Разработка для маркетинговых целей</p>
           <img class="w-[334px] h-[334px] mt-auto" src="<%= require('./images/developer-activity-amico.svg')%>" alt="">
         </div>
-        <div class="basis-2/3 border-2">
-
+        <div class="basis-2/3">
+          <h3 class="text-2xl font-bold mb-20 text-primary-darker">Маркетологи. Разработчики. Дизайнеры.</h3>
+          <p class="text-xl text-primary-darker ">
+            Мы занимаемся интернет-маркетингом в течение 6 лет в сфере промышленности. За это время было запущено более 15
+            рекламных кампаний для фирм и производителей с географией по всей России. Фокус на промышленных малых и средних
+            фирмах позволил нам выработать <span class="font-semibold">нишевую экспертизу</span>, что в свою очередь позволяет нам найти для Вас целевого клиента там, где его не
+            найдет специалист рекламного агенства. Кстати, зная детально запросы и потребности целевой аудитории, можно
+            сэкономить и на затратах в рекламных системах.
+        </p>
         </div>
       </div>
-      <div class="rounded-[36px]  bg-primary p-14 flex relative -top-[56px]">
+      <div class="rounded-[36px] bg-primary p-6 olpc:p-14 flex flex-col olpc:flex-row relative -top-[56px]">
         <div class="basis-1/3 flex flex-col items-start">
-          <span class="inline-block rounded-full text-white border border-[#B4D7FF] text-sm font-semibold px-3 py-1 text-lg text-[#B4D7FF]">Основа</span>
-          <h3 class="text-6xl text-white font-bold max-w-xs mt-5">Дело <br>в деталях</h3>
-          <p class="text-[#B4D7FF] text-2xl max-w-xs mt-4 mb-16">Lorem ipsum dolor sit amet consectetur. </p>
-          <img class="w-[334px] h-[334px] mt-auto" src="<%= require('./images/developer-activity-amico.svg')%>" alt="">
+          <span class="inline-block rounded-full text-white border border-[#B4D7FF] text-sm font-semibold px-3 py-1 text-lg text-[#B4D7FF]">FAq</span>
+          <h3 class="text-3xl laptop:text-4xl olpc:text-6xl text-white font-bold max-w-xs  mt-20 mb-4">Мартех <br>в деталях</h3>
+          <p class="text-[#B4D7FF] text-base olpc:text-2xl max-w-xs mt-4 olpc:mb-16">Часто задаваемые вопросы</p>
+          <img class="w-[334px] h-[334px] mt-auto" src="<%= require('./images/FAQs-amico.svg')%>" alt="">
         </div>
-        <div class="basis-2/3 border-2">
-          <a href="/blog/chto-takoe-martekh-i-ego-rol-v-marketinge.html">Что такое Мартех?</a>
-          <a href="/blog/top-5-trendy-martekh.html">Тенденции Martech</a>
+        <div class="basis-2/3">
+          <ul class="frequently__questions">
+            <li class="group frequently__item relative border-b py-6 border-b-primary-lighter">
+                <h3 class="frequently__question font-medium text-lg text-primary-lighter hover:text-white cursor-pointer olpc:text-xl">Что такое «Мартех»?</h3>
+                <p class="frequently__answer mt-5 text-base olpc:text-lg text-primary-lighter">
+                  МарТех — это комплекс технологий, применяемых в маркетинге, которые включают инструменты, платформы и аналитические системы. Они помогают маркетологам исследовать рынок, продвигать бренд и повышать эффективность бизнеса. МарТех возник в результате интеграции маркетинга и информационных технологий, что позволяет маркетологам использовать цифровые инструменты для улучшения своих компетенций и рабочих процессов.
+                  <a class="underline text-primary-darker font-semibold" href="/blog/chto-takoe-martekh-i-ego-rol-v-marketinge.html">Читать подробнее о тенденциях в 2023 году</a>
+                </p>
+            </li>
+            <li class="group frequently__item relative border-b py-6 border-b-primary-lighter">
+                <h3 class="frequently__question font-medium text-lg text-primary-lighter hover:text-white cursor-pointer olpc:text-xl">Тренды Мартех</h3>
+                <p class="frequently__answer mt-5 text-base olpc:text-lg text-primary-lighter">
+                  В 2023 году в сфере MarTech (маркетинговых технологий) можно выделить такие тренды, как искусственный интеллект, чат-боты, персонализация таргетинга, расширенная аналитика, мобильный маркетинг, видеоконтент и онлайн-взаимодействие.
+                  <a class="underline text-primary-darker font-semibold" href="/blog/top-5-trendy-martekh.html">Читать подробнее про топ 5 трендов Мартех</a>
+                </p>
+            </li>
+        </ul>
+          
+          
         </div>
       </div>
     </section>   
+    <section class="container mx-auto mt-24 olpc:max-w-7xl">
+      <h2 class="text-center font-bold text-white text-3xl laptop:text-4xl olpc:text-5xl">Технологии</h2>
+      <ul class="grid grid-rows-6 gap-3 mt-12 laptop:grid-cols-2 laptop:grid-rows-3 olpc:grid-cols-3 olpc:grid-rows-2">
+        <% techs.map((tech) => {  %>
+          <li class="bg-primary-dark rounded-3xl p-5 relative olpc:p-8">
+            <h3 class="font-semibold text-white text-xl olpc:text-2xl"><%= tech.title %></h3>
+            <p class="text-base olpc:text-xl text-[#6D82AA] max-w-[300px]"><%= tech.desc %></p>
+            <figure>
+              <img src="<%= require(`./images/tech-icons/${tech.iconName}`)%>" class="absolute top-5 right-5 w-7 h-7 olpc:w-9 olpc:h-9 olpc:top-8 olpc:right-8" alt="<%= tech.alt %>">
+            </figure>
+          </li>
+        <% }) %>
+      </ul>
+    </section>
   </main>
 <footer class="container mx-auto mt-24 olpc:max-w-7xl p-14 flex justify-between">
   <div>
@@ -145,7 +173,7 @@
     <p class="text-base text-primary-light">2024 ООО «Купцов Технологии» </p>
   </div>
   <p class="text-base text-primary-light max-w-sm">
-    Lorem ipsum dolor sit amet consectetur. In malesuada et consectetur sapien egestas eleifend cursus vulputate elementum. Aliquet parturient et lorem quam sit non.
+    Мы объединяем технологии, инновации и классический маректинг для вашего успеха.
   </p>
 </footer> <!--FOOTER
   html-loader!./insets/asides/inner-footer.html').default-->

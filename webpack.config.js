@@ -110,7 +110,7 @@ module.exports = {
       template: './src/index.html', // путь к файлу index.html
       chunks: ['index', 'all'],
     }),
-    new HtmlWebpackPlugin({
+    /*new HtmlWebpackPlugin({
       templateParameters: {
         canonicalURL,
       },
@@ -118,7 +118,7 @@ module.exports = {
       template: './src/about.html', // путь к файлу index.html
       filename: 'about/index.html',
       chunks: ['index', 'all'],
-    }),
+    }),*/
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].css'

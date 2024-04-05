@@ -50,10 +50,10 @@ module.exports = {
       }),
     
     screens: {
-      'pc': {'min': '1536px'},
-      'mvpc': {'min': '1366px'},
-      'olpc': {'min': '1240px'},
       'laptop': {'min': '768px'},
+      'olpc': {'min': '1240px'},
+      'mvpc': {'min': '1366px'},
+      'pc': {'min': '1536px'}, 
     },
     colors: {
       primary: {

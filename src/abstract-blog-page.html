@@ -34,8 +34,8 @@
       <button class="font-semibold text-xl text-[#8CA0C3]">Запросить референсы</button>
     </div>
   </header>
-  <main class="container mx-auto relative pt-20 olpc:max-w-7xl">
-    <article class="prose prose-xl prose-kupcovcom">
+  <main class="container max-w-[calc(100%-20px)] mx-auto relative pt-20 olpc:max-w-7xl">
+    <article class="prose prose-base olpc:prose-lg pc:prose-xl prose-kupcovcom">
       <%= require(`html-loader!./articles/${articleId}/${articleId}.html`).default %>
     </article>
     <div class="blogpage__market">
